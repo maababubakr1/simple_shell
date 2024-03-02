@@ -59,5 +59,8 @@ int exe_fun(int *cycle, char **_args, char **av, char **env);
 int stat_fun(char **str, int *fl, char *com, int coun, char *av_0, char **env);
 char **token_arg(char *str);
 char *func_env(char *com, char **env, int *no_path);
+void assign_lineptr(char **lineptr, size_t *n, char *buffer, size_t b);
+ssize_t _getline(char **lineptr, size_t *n, FILE *stream);
+char *_strcpy(char *dest, const char *src);
 
 #endif
